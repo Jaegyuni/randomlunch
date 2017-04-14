@@ -1,0 +1,101 @@
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+    <style>
+    body{
+        margin: auto;
+        padding:0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-image: url("http://www.sciencemag.org/sites/default/files/styles/article_main_large/public/images/cc_0309careers-waiting-in-line_16x9.jpg?itok=P0BNFmTM");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: right bottom;
+    }
+    table, td {background-color: transparent;} 
+    
+    .headfont{
+        font-family: 'Iropke Batang', serif;
+        font-size: 150%;
+        color: rgb(255,255,255);
+        vertical-align: middle;
+        text-align: center;
+        line-height: 100%;
+        margin-top: 100px;
+        z-index: 3;
+    }
+    
+    .explain{
+        font-family: 'Iropke Batang', serif;
+        font-size: 100%;
+        color: rgb(220,165,92);
+        vertical-align: middle;
+        text-align: center;
+        line-height: 220%;
+        margin-left: 34%;
+        z-index: 3;
+    }
+    .box1{
+        background-color: rgba(240,173,78,0.8);
+        border-radius: 30px;
+        width: 40%;
+        text-align: center;
+        line-height: 70px;
+        padding: 30px;
+        margin-top: 7%;
+        margin-left: 30%;
+        z-index: 1;
+    }
+    
+    .box2{
+        background-color: rgba(255,255,255,0.9);
+        border-radius: 30px;
+        width: 40%;
+        text-align: center;
+        padding: 20px;
+        margin-top: 2%;
+        margin-left: 30%;
+        margin-bottom: 3%;
+        z-index: 1;
+    }
+    
+
+      
+    .index_textbox{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        transform-style: inherit;
+        z-index: 2;
+    }
+
+    #index{
+        background-image: url();
+        background-attachment: fixed; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:bottom right;
+    }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="headfont box1">마을을 선택한 당신! 학교 좀 다녀보셨군요. </br>사실 진짜 갑은 마을이죠.</div>
+    <div class="explain box2">근데 저도 사실 마을 진짜 좋아해요</br>엄닭 사장님 사랑해요. 이따 저녁에 봬요. </br>이제 당신의 한끼 제가 골라드릴게요. 성함을 알려주세요</div>
+    
+    <center><form action="/game/maeul_this_is_ur_lunch" method="GET">
+        <div class="col-sm-5">
+        <input type="text" class="form-control form-control-warning" id="inputHorizontalWarning" placeholder="please enter your name" name="m_yname"></div>
+         <input type="submit" class="btn btn-warning" style="margin-top: 2%"></center>
+    </form>
+
+    
+</body>

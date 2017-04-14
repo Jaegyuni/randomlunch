@@ -1,0 +1,105 @@
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+    <style>
+    body{
+        margin: auto;
+        padding:0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-image: url("http://www.redvanilla.com/images/EW3402%20(3).JPG");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: right bottom;
+    }
+    table, td {background-color: transparent;}
+    
+    .headfont{
+        font-family: 'Iropke Batang', serif;
+        font-size: 20px;
+        font: bold;
+        color: rgb(255,255,255);
+        vertical-align: middle;
+        text-align: center;
+        line-height: 35px;
+        margin: 20px auto;
+        z-index: 3;
+    }
+    
+    .explain{
+        font-family: 'Iropke Batang', serif;
+        font-size: 15px;
+        color: rgb(220,165,92);
+        vertical-align: middle;
+        text-align: center;
+        line-height: 25px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        margin-left: 32.3%;
+    }
+    .box1{
+        background-color: rgba(220,165,92,0.6);
+        border: 4px solid #fff;
+        width: 60%;
+        text-align: center;
+        line-height: 35px;
+        padding: 20px;
+        margin: 78px auto;
+        z-index: 1;
+    }
+    
+    .box2{
+        background-color: rgba(255,255,255,0.94);
+        border-radius: 30px;
+        width: 40%;
+        text-align: center;
+        line-height: 25px;
+        padding: 15px;
+        margin-top: 15px;
+        margin-left:30%;
+        z-index: 1;
+    }
+    
+
+      
+    .index_textbox{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        transform-style: inherit;
+        z-index: 2;
+    }
+    
+    #store_image{
+        background-image:url("<%= @jeongmun_image %>");
+        background-size: cover;
+        border-radius: 60px;
+        margin-top: 3%;
+        margin-left: 29.5%;
+        padding-top: 50px;
+        width: 550px;
+        height: 380px;
+    }
+
+    </style>
+</head>
+
+<body>
+    
+    <div id="store_image">
+        <div class="headfont box1">오늘, <%= @jeongmun_name %>님을 위한 곳은 </br> <%= @jeongmun_store %>입니다!</div>
+    </div>
+    <div class="explain box2">제 몫까지 꼭꼭 씹어서 맛있게드세요!</br>식사 맛있게 하시고 오늘 하루도 기운차게 보내세요!</br>경희대학교 멋쟁이 사자처럼에서 당신을 응원합니다!</div>
+    
+    <center><a href='#'><button type="button" class="btn btn-outline-warning btn-lg" style="margin: -13% 0.5%">네, 당신은 답정너입니다.</button></a>
+    <a href='/game/maeul_this_is_ur_lunch'><button type="button" class="btn btn-outline-warning btn-lg" style="margin:-13% 0.5%">오..! 마을로 가시려구요?</button></a></center>
+    <center><a href='/game/index'><button type="button" class="btn btn-outline-warning btn-middle" style="margin-top:3%">맨 처음 화면으로 가고싶으세요? 근데 다른이름으로 해도 많이 다르진 않아요.</button></a></center>
+    
+    
+</body>

@@ -1,0 +1,80 @@
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+    <style>
+    body{
+        margin: auto;
+        padding:0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-image: url("http://www.sciencemag.org/sites/default/files/styles/article_main_large/public/images/cc_0309careers-waiting-in-line_16x9.jpg?itok=P0BNFmTM");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: right bottom;
+    }
+    table, td {background-color: transparent;} 
+    
+    .headfont{
+        font-family: 'Iropke Batang', serif;
+        font-size: 180%;
+        color: rgb(255,255,255);
+        vertical-align: middle;
+        text-align: center;
+        line-height: 100%;
+        margin-top: 100px;
+        margin-left: 33%
+        z-index: 3;
+    }
+    
+   .explain{
+        font-family: 'Iropke Batang', serif;
+        font-size: 20px;
+        color: rgb(220,165,92);
+        vertical-align: middle;
+        text-align: center;
+        line-height: 1000px;
+        margin-top: 4%;
+        margin-left: 33%;
+        z-index: 3;
+    }
+    .box1{
+        background-color: rgba(240,173,78,0.8);
+        width: 35%;
+        text-align: center;
+        line-height: 70px;
+        padding: 30px;
+        margin-top: 5%;
+        margin-left: 33%;
+        z-index: 1;
+    }
+    
+    .box2{
+        background-color: rgba(255,255,255,0.8);
+        width: 35%;
+        text-align: center;
+        line-height: 50px;
+        padding: 20px;
+        margin-left: 33%;
+        margin-bottom: 3%;
+        z-index: 1;
+    }    
+    </style>
+
+</head>
+
+<body>
+    <div class="headfont box1">굳이 정문을 건너가겠다는 당신</br>저는 그저 부러워요</div>
+    <div class="explain box2">돌아올 때 외대에서 줄 길어라</br>그래서 당신의 이름은?</div>
+    
+    <center><form action="/game/jeongmun_this_is_ur_lunch" method="Get">
+        <div class="col-sm-5">
+        <input type="text" class="form-control form-control-warning" id="inputHorizontalWarning" placeholder="please enter your name" name="j_yname"></div>
+        </br><input type="submit" class="btn btn-warning"></center>
+    </form>
+</body>
