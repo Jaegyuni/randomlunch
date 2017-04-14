@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'game#index'
+  # root 'game#index'
 get 'game/index' => 'game#index'
 get 'game/there_is_no_time' => 'game#distance'
 get 'game/jeongmun_enter_ur_name' => 'game#jeongmunone'
