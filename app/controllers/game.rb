@@ -6,9 +6,10 @@ class GameController < ApplicationController
     def distance
     end
     
+    
     def jeongmunone
-        
     end
+    
     
     def jeongmuntwo
         @jeongmun_name = params[:j_yname]
