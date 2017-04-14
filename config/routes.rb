@@ -4,12 +4,12 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
    root 'game#index'
-get 'game/index' => 'game#index'
-get 'game/there_is_no_time' => 'game#distance'
-get 'game/jeongmun_enter_ur_name' => 'game#jeongmunone'
-get 'game/jeongmun_this_is_ur_lunch' => 'game#jeongmuntwo'
-get 'game/maeul_enter_ur_name' => 'game#maeulone'
-get 'game/maeul_this_is_ur_lunch' => 'game#maeultwo'
+get 'game/index' => 'game_controller#index'
+get 'game/there_is_no_time' => 'game_controller#distance'
+get 'game/jeongmun_enter_ur_name' => 'game_controller#jeongmunone'
+get 'game/jeongmun_this_is_ur_lunch' => 'game_controller#jeongmuntwo'
+get 'game/maeul_enter_ur_name' => 'game_controller#maeulone'
+get 'game/maeul_this_is_ur_lunch' => 'game_controller#maeultwo'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
